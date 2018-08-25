@@ -6,9 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="350" Width="550">
 
-    <Grid>
+    <Grid Margin="0,0,10,10">
+        <Image x:Name="imgPicture" HorizontalAlignment="Left" Height="300" Margin="20,20,0,0" VerticalAlignment="Top" Width="300" Source="/Assets/SplashScreen.png"/>
+        <Button x:Name="btnLoadPicture" Content="Load Picture" HorizontalAlignment="Left" Margin="400,250,0,0" VerticalAlignment="Top" Click="btnLoadPicture_ClickAsync"/>
+        <ListView x:Name="lstEmotions" HorizontalAlignment="Left" Height="204" Margin="352,20,0,0" VerticalAlignment="Top" Width="178"/>
 
     </Grid>
 </Page>
